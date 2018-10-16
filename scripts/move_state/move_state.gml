@@ -32,6 +32,18 @@
 }
 	y += vspd;
 	
+	/// check for battle encounter
+	if(len == 1) {
+	var rng = irandom(steps);
+	if (rng == steps) && (steps <= 850) {
+		fadeout(rBattle, c_white, 0.025,x,y);
+		steps = 1000;
+	}else{
+		steps -= 1;
+		}
+	}
+	
+	
 	///sprites
 	image_speed = 0.5;
 	if (len == 0){

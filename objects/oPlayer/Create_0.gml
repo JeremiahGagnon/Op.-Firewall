@@ -1,11 +1,14 @@
 /// @desc Initialize
-spd = 4;
+spd = 1;
 hspd = 0;
 vspd = 0;
 len = 0;
 dir = 0;
 
 state = move_state;
+Player_stats();
+steps = 1000;
+
 
 // sprite variables
 
