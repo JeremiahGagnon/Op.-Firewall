@@ -4,6 +4,7 @@ lkey = max (keyboard_check(vk_left), keyboard_check(ord("A")), 0 );
 dkey = max (keyboard_check(vk_down), keyboard_check(ord("S")), 0 );
 ukey = max (keyboard_check(vk_up), keyboard_check(ord("W")), 0 );
 
+actionkey = keyboard_check_pressed(vk_space);
 pauseKey = keyboard_check(vk_enter);
 
 xaxis = (rkey - lkey);
