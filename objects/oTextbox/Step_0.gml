@@ -5,11 +5,12 @@ var actionHold = keyboard_check(vk_space);
 
 //check if we need more characters
 	if(characters < message_length) {
-	characters += message_speed+action_hold;
+	characters += message_speed + actionHold;
 	
 	message_draw = string_copy(message[message_current], 0, characters);
 	}else{ 
 		if (actionkey){
+			//check for more messages
 			if (message_current < message_end) {	//start next message
 				message_current += 1;
 				message_length = string_length(message[message_current]);

@@ -4,7 +4,7 @@ scr_Input();
 depth = -y;
 script_execute(state);
 
-if(room != rBattle) && (room != rPause) && (!instance_exists(oFade)) {
+if(room != rBattle) && (room != rPause) && (!instance_exists(oFade)) && (!instance_exists(oTextbox)) {
 	script_execute(state);
 } else {
 	image_index = 0;
